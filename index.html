@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+   <div class="hero">
+     <div class="form-box">
+        <div class="button-box">
+          <div id="id1"></div>
+          <button type="button" class="btn" onclick="login()">log in</button>
+          <button type="button" class="btn" onclick="register()">Register</button>
+        </div>
+     <form id="login" onsubmit="return valid()" class="input">
+     <input type="text"  id="username" class="inputid" placeholder="User Id" required>
+     <input type="text" id="password" class="inputid" placeholder="Enter Password" required>
+     <input type="checkbox" class="check">
+     <button type="submit" class="sbtn">login </button>
+     </form>
+     <form id="register" onsubmit="return valid1()" class="input">
+      <input type="text" id="username1" class="inputid" placeholder="User Id" required>
+      <input type="email" class="inputid" placeholder="Email id" required>
+      <input type="text" id="password1" class="inputid" placeholder="Enter Password" required>
+      <input type="text" id="cpassword" class="inputid" placeholder="confirm Password" required>
+      <input type="checkbox" class="check">
+      <button type="submit" class="sbtn">Register </button>
+      </form>
+    </div> 
+   </div>
+   <script src="./script/script.js"></script>
+</body> 
+</html>
